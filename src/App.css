@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
+.app{
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 350px;
+    max-height: 400px;
+    width: 50vw;
+    height: 33vh;
+  
+    background-color: rgb(29, 31, 58);
+  
+    border-radius: 25px;
+  
+    position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+        
+      margin: auto;
+      box-shadow: 5px 10px 10px #888888;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-}
+  
+  .display{
+    margin: 40px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    padding: 15px;
 
-.App-link {
-  color: #61dafb;
-}
+    text-align: right;
+    background-color:rgb(57, 61, 55);
+    width: 80%;
+    height: 30px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  .prevNumber{
+      font-size: 70%;
+      margin-top: -7px;
   }
-}
+  .currentNumber{
+      margin-top: 7px;
+    font-size: 120%;
+  }
+
+  table{
+      margin-top: -30px;
+      width: 90%;
+      height: 70%;
+      border-spacing: 5px;
+  }
+  td{
+      text-align: center;
+      width: 80px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  .number{
+    background-color: rgb(151, 151, 151);
+  }
+  .character{
+    background-color: rgb(48, 48, 48);
+  }
+  .clean{
+    background-color: rgb(124, 40, 40);
+  }
+  .background-change{
+    background-color: rgb(168, 127, 51);
+  }
+
+  .number:active{
+    background-color: rgb(124, 124, 124);
+  }
+  .character:active{
+    background-color: rgb(34, 34, 34);
+  }
+  .clean:active{
+    background-color: rgb(107, 35, 35);
+  }
+  .background-change:active{
+    background-color: rgb(139, 106, 43);
+  }
